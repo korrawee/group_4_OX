@@ -36,6 +36,9 @@ class Printer:
         self.board = Board()
         self.textInput = TextInput()
     def show(self):
+        if(self.board.win_check()):
+            print("The winner is ", self.textInput.player)
+            self.resetBoard()
         for i in range(3):
             for j in range(3):
                 print("|",end='')
