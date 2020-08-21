@@ -1,0 +1,43 @@
+commit 0fee630cd8c66dfa3f4a9f9267b6d7f5ae676173
+Author: korrawee <69130635+korrawee@users.noreply.github.com>
+Date:   Fri Aug 21 23:36:06 2020 +0700
+
+    Update show method
+    
+    use win_check() in show
+
+commit 902af11cccf081475ecf22d0af47a031ffb45322
+Author: Pannawat Kingkaew <s6201012620163@email.kmutnb.ac.th>
+Date:   Fri Aug 21 23:19:09 2020 +0700
+
+    textinput
+
+commit b6b6a6adffdaa309c238e32e30905630ddd2a6c4
+Author: PosEnough <wavemaza555@gmail.com>
+Date:   Fri Aug 21 23:05:29 2020 +0700
+
+    Fix show() and resetBoard()
+
+commit c40ea799510f3e30b4e7826aa04025a5e5133bc3
+Author: Tunlaya Sanphokha <s6201012620341@email.kmutnb.ac.th>
+Date:   Fri Aug 21 22:34:47 2020 +0700
+
+    add resetBorad method
+
+commit dcc94e1173fdd5af30bee8088eb78b02d3860ee4
+Author: Tunlaya Sanphokha <s6201012620341@email.kmutnb.ac.th>
+Date:   Fri Aug 21 22:01:16 2020 +0700
+
+    create class Printer
+
+commit aae07460a7880fd8874ac7f6e9b6f0629c17fa00
+Author: PosEnough <wavemaza555@gmail.com>
+Date:   Fri Aug 21 18:44:43 2020 +0700
+
+    Class Board Add method win_check(), getChar(), setChar
+
+commit beaeb34a23c987e2a2bac772d3078fc713e29628
+Author: PosEnough <wavemaza555@gmail.com>
+Date:   Fri Aug 21 12:32:00 2020 +0700
+
+    Empty class
