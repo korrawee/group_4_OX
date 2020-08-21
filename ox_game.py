@@ -34,7 +34,18 @@ class Board :
     def setChar(self, char,  r, c):
         self.array[r][c] = char
 class Printer:
-    def __init__(self):
+    def __init__(self,):
+	self.board = Board()
+	self.textInput = TextInput()
+    def show(self):
+	for i in range(3):
+	     for j in range(3):
+		print("|",end=' ')
+		tmp = self.board.getChar(i,j)
+		print(tmp,end = " ")
+	     print("|\n-------")
+        self.textInput.getInput(self)
+	self.show()
 
 class TextInput:
     def __init__(self):
