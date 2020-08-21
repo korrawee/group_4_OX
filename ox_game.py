@@ -41,10 +41,15 @@ class Printer:
 	for i in range(3):
 	     for j in range(3):
 		print("|",end=' ')
-		tmp = self.board.getChar(i,j)
+		tmp = self.board.getChar(i,j) #สร้างตัวแปรไว้เก็บค่าชั่วคราว
 		print(tmp,end = " ")
 	     print("|\n-------")
         self.textInput.getInput(self)
+	self.show()
+    def resetBoard(self):
+	for a in range(3)d:
+	   for b in range(3):
+		self.board.getChar(a,b)
 	self.show()
 
 class TextInput:
