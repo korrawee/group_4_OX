@@ -90,13 +90,15 @@ class Board :
 #===========================================================================================
 class Printer:
     def show(self,obj):
-        print("|",end="")
+
+        print("|",end='')      
         for position in range(1,10):
-            tmp = obj.getChar(position)
-            print(tmp,end="")
-            print("|",end="")
+            tmp = obj.getChar(position) #temp variable
+            print(tmp,end = '')
+            print("|",end='')      
+
             if(position%3 == 0 and position != 1):
-                print("\n-------")
+                print("\n-------\n|",end='')
 #===========================================================================================
 class TextInput() :
     def getInput(self,obj):
