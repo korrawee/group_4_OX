@@ -8,22 +8,30 @@ class Board :
 	self.player = "X"
 	self.turn = 0
 
+
     def startgame(self):
-	textinput = TextInput()
-	printer = Printer()
-	while self.game_stillplay:
-	   printer.show(self)
-	   if(self.win_check()):
-		if self.player == 'o':
-		   self.player = 'x'
-		else:
-		   self.player = 'o'
-		print("The winner is ",self.player)
-		self.clearBoard()
-	   if(self.tie_check()):
-		print("Game Tie")
-		self.clearBoard()
-	   textinput.getInput(self)
+        textinput = TextInput() #declare obj var.
+        printer = Printer()
+        while self.game_stillplay: #game loop
+            printer.show(self)
+            if(self.win_check()):
+                if self.player == 'O':
+                    self.player = 'X'
+                    print("THE WINNER IS PLAYER " + self.player + " !!")
+                    self.player = 'O'
+                else:
+                    self.player = 'O'
+                    print("THE WINNER IS PLAYER " + self.player + " !!")
+                    self.player = 'X'
+                self.clearBoard()
+                print("\nNEW GAME BEGIN!!!!\n")
+                printer.show(self)
+            if (self.tie_check()):
+                print("Game TIE..")
+                self.clearBoard()
+                printer.show(self)
+            print(" Player " + self.player + ' TURN',end='')
+            textinput.getInput(self)
 
     def win_check(self,):
         state = 0
@@ -99,3 +107,4 @@ class TextInput() :
         
 game = Board()
 game.startgame()
+
