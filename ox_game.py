@@ -83,26 +83,14 @@ class Board :
 			[' ',' ',' '],
 			[' ',' ',' ']]
 class Printer:
-    def __init__(self,):
-        self.board = Board()
-        self.textInput = TextInput()
-    def show(self):
-        if(self.board.win_check()):
-
-            print("The winner is ", self.textInput.player)
-            self.resetBoard()
-        for i in range(3):
-            for j in range(3):
-                print("|",end='')
-                tmp = self.board.getChar(i,j) #สร้างตัวแปรไว้เก็บค่าชั่วคราว
-                print(tmp,end = "")
-            print("|\n-------")
-        self.textInput.getInput(self)
-        self.show()
-    def resetBoard(self):
-        for a in range(3):
-            for b in range(3):
-                self.board.setChar(" ", a, b)
+    def show(self,obj):
+	print("|",end="")
+	for position in range(1,10):
+		tmp = obj.getChar(position)
+		print(tmp,end="")
+		print("|",end="")
+		if(position%3 == 0 and position != 1);
+			print("\n-------")
 
 class TextInput() :
     def __init__(self,):
