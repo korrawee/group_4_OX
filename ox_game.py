@@ -102,8 +102,8 @@ class Printer:
 
 class TextInput() :
     def getInput(self,obj):
-	position = int(input("\nwhich box you desire:""))
-	obj.setChar()
+        position = int(input("\nwhich box you desire: "))
+        obj.setChar(position)
         
 game = Board()
 game.startgame()
