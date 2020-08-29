@@ -5,8 +5,8 @@ class Board :
                     [' ', ' ', ' ']]
         self.game_stillplay = True
         self.winner = None
-	self.player = "X"
-	self.turn = 0
+        self.player = "X"
+        self.turn = 0
 
 
     def startgame(self):
@@ -46,7 +46,6 @@ class Board :
         if self.array[0][0] == self.array[1][1] == self.array[2][2] != " ":
             state = 1
         elif self.array[0][2] == self.array[1][1] == self.array[2][0] != " ":
-            #print(array[0][2], "player is WIN!!!")
             state  = 1
         if(state == 1):
             return True
@@ -54,50 +53,51 @@ class Board :
             return False
 
     def tie_check(self):
-	for k in self.array:
-		if '-' in k:
-			return True
-		else:
-			return False
+        for k in self.array:
+            if '-' in k:
+                return True
+            else:
+                return False
 
     def error_check(self,position):
-	if(position > 9):
-		return False
-	tmp = self.getChar(position)
-	if(tmp == 'O'):
-		return False
-	elif(tmp == 'X'):
-		return False
-	else:
-		return True
+        if(position > 9):
+            return False
+        tmp = self.getChar(position)
+        if(tmp == 'O'):
+            return False
+        elif(tmp == 'X'):
+            return False
+        else:
+            return True
 
     def getChar(self, position):
         list1 = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
-	return self.array[list1[position-1][0]][list1[position-1][1]]
+        return self.array[list1[position-1][0]][list1[position-1][1]]
 
     def setChar(self, char,  r, c):
         list1 = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
-	if self.error_check(obj,position) is True :
-		if (self.player == 'O'):
-			self.array[lis1[position-1][0]][list1[position-1][1]] = char
-			self.player = 'X'
-		elif(self.player == 'X'):
-			self.array[lis1[position-1][0]][list1[position-1][1]] = char
-                        self.player = 'O'
+        if self.error_check(obj,position) is True :
+            if (self.player == 'O'):
+                self.array[lis1[position-1][0]][list1[position-1][1]] = char
+                self.player = 'X'
+            elif(self.player == 'X'):
+                self.array[lis1[position-1][0]][list1[position-1][1]] = char
+                self.player = 'O'
     def claerBoard(self):
-	self.array = [[' ',' ',' '],
-			[' ',' ',' '],
-			[' ',' ',' ']]
+        self.array = [[' ',' ',' '],
+                [' ',' ',' '],
+                [' ',' ',' ']]
+#===========================================================================================
 class Printer:
     def show(self,obj):
-	print("|",end="")
-	for position in range(1,10):
-		tmp = obj.getChar(position)
-		print(tmp,end="")
-		print("|",end="")
-		if(position%3 == 0 and position != 1);
-			print("\n-------")
-
+        print("|",end="")
+        for position in range(1,10):
+            tmp = obj.getChar(position)
+            print(tmp,end="")
+            print("|",end="")
+            if(position%3 == 0 and position != 1):
+                print("\n-------")
+#===========================================================================================
 class TextInput() :
     def getInput(self,obj):
         position = int(input("\nwhich box you desire: "))
