@@ -1,3 +1,94 @@
+commit dc55f6589f99761bd206d993ecf610cd19f0b797
+Author: korrawee <korrawee.somyos@gmail.com>
+Date:   Sun Aug 30 00:56:36 2020 +0700
+
+    Edit Printer class's show method
+
+commit e036bc00a0862cdf6e52ccfead9e8f188bc1e484
+Author: korrawee <korrawee.somyos@gmail.com>
+Date:   Sun Aug 30 00:53:16 2020 +0700
+
+    Edit setChar method
+
+commit 58f9dbf4369722094bb8e6e22864b9f94f66f766
+Author: korrawee <korrawee.somyos@gmail.com>
+Date:   Sun Aug 30 00:50:11 2020 +0700
+
+    Fix indent Bug
+
+commit c48d4d8abb84221cf7d84a12c4d6a5b83f40abfb
+Author: korrawee <korrawee.somyos@gmail.com>
+Date:   Sun Aug 30 00:40:25 2020 +0700
+
+    Reduce method's error_check arg.
+
+commit 2c8f19f9266b0dc466ebf8f84a54b410826020a6
+Author: Tunlaya Sanphokha <s6201012620341@email.kmutnb.ac.th>
+Date:   Sun Aug 30 00:30:19 2020 +0700
+
+    edit class TextInput
+
+commit 7d532d66822bd92216908198ac8fa0b81395a8c3
+Author: Tunlaya Sanphokha <s6201012620341@email.kmutnb.ac.th>
+Date:   Sun Aug 30 00:24:51 2020 +0700
+
+    edit method startgame
+
+commit 14b363a9b5ff82b69a9b892937b03049f4866a6b
+Author: korrawee <korrawee.somyos@gmail.com>
+Date:   Sat Aug 29 21:56:34 2020 +0700
+
+    Fix syntax error
+
+commit 628578c4caf25e10e1d1d8169e1da5cf25a0dcbe
+Author: Tunlaya-Sanphokha <69080191+Tunlaya-Sanphokha@users.noreply.github.com>
+Date:   Sat Aug 29 21:21:52 2020 +0700
+
+    Delete .ox_game.py.swp
+
+commit 99714f2d2cf5d8881b0da1cf1fee7dcf027e3295
+Author: Tunlaya Sanphokha <s6201012620341@email.kmutnb.ac.th>
+Date:   Sat Aug 29 21:19:09 2020 +0700
+
+    Get position and edit position
+
+commit a564b49409b3709e251b4ca311f6d0431cdec1ef
+Author: Pannawat Kingkaew <s6201012620163@email.kmutnb.ac.th>
+Date:   Sat Aug 29 14:09:49 2020 +0700
+
+    change Class TextInput attribute and method
+
+commit ad85b8504f37203c086a9584d5ffded5897d029d
+Author: Pannawat Kingkaew <s6201012620163@email.kmutnb.ac.th>
+Date:   Sat Aug 29 14:05:16 2020 +0700
+
+    change Class Printer attribute and method
+
+commit 8db281e83c7d624c50966f687f4bb5564c40991d
+Author: Pannawat Kingkaew <s6201012620163@email.kmutnb.ac.th>
+Date:   Sat Aug 29 13:57:54 2020 +0700
+
+    change class Board method and attribute
+
+commit 681e87de8a618632bb5a32360c19b45065d589df
+Merge: 52ff1d7 95ec696
+Author: Pannawat Kingkaew <s6201012620163@email.kmutnb.ac.th>
+Date:   Sat Aug 29 13:36:52 2020 +0700
+
+    Merge branch 'master' of https://github.com/korrawee/group_4_OX
+
+commit 95ec6968e28cedd3cee7a39644d2b9a5d30582ec
+Author: Author korrawee <korrawee.somyos@gmail.com>
+Date:   Fri Aug 21 23:46:11 2020 +0700
+
+    add commit log
+
+commit 52ff1d739c0dffd6f325cab5e13c90c99ebfbfaa
+Author: Pannawat Kingkaew <s6201012620163@email.kmutnb.ac.th>
+Date:   Fri Aug 21 23:39:24 2020 +0700
+
+    add commit log
+
 commit 0fee630cd8c66dfa3f4a9f9267b6d7f5ae676173
 Author: korrawee <69130635+korrawee@users.noreply.github.com>
 Date:   Fri Aug 21 23:36:06 2020 +0700
