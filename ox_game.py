@@ -3,8 +3,27 @@ class Board :
         self.array = [[' ',' ',' '], 
                     [' ', ' ', ' '], 
                     [' ', ' ', ' ']]
-        self.row = 0
-        self.column = 0
+        self.game_stillplay = True
+        self.winner = None
+	self.player = "X"
+	self.turn = 0
+
+    def startgame(self):
+	textinput = TextInput()
+	printer = Printer()
+	while self.game_stillplay:
+	   printer.show(self)
+	   if(self.win_check())
+		if self.player == 'o'
+		   self.player = 'x'
+		else
+		   self.player = 'o'
+		print("The winner is ",self.player)
+		self.clearBoard()
+	   if(self.tie_check()):
+		print("Game Tie")
+		self.clearBoard()
+	   textinput.getInput(self)
 
     def win_check(self,):
         state = 0
@@ -26,17 +45,50 @@ class Board :
         else:
             return False
 
-    def getChar(self, row, column):
-        return self.array[row][column]
+    def tie_check(self):
+	for k in self.array:
+		if '-' in k:
+			return True
+		else:
+			return False
+
+    def error_check(self,obj,position):
+	if(row>2):
+		return False
+	elif(column>2):
+		return False
+	tmp = self.getChar(position)
+	if(tmp == 'o'):
+		return False
+	elif(tmp == 'x'):
+		return False
+	else:
+		retrun True
+
+    def getChar(self, position):
+        list1 = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
+	return self.array[list1[position-1][0]][list1[position-1][1]]
 
     def setChar(self, char,  r, c):
-        self.array[r][c] = char
+        list1 = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
+	if self.error_check(obj,position) is True :
+		if (self.player == 'o'):
+			self.array[lis1[position-1][0]][list1[position-1][1]] = char
+			self.player = 'x'
+		elif(self.player == 'x'):
+			self.array[lis1[position-1][0]][list1[position-1][1]] = char
+                        self.player = 'o'
+    def claerBoard(self):
+	self.array = [[' ',' ',' '],
+			[' ',' ',' '],
+			[' ',' ',' ']]
 class Printer:
     def __init__(self,):
         self.board = Board()
         self.textInput = TextInput()
     def show(self):
         if(self.board.win_check()):
+
             print("The winner is ", self.textInput.player)
             self.resetBoard()
         for i in range(3):
