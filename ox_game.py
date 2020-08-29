@@ -60,15 +60,13 @@ class Board :
 		else:
 			return False
 
-    def error_check(self,obj,position):
-	if(row>2):
-		return False
-	elif(column>2):
+    def error_check(self,position):
+	if(position > 9):
 		return False
 	tmp = self.getChar(position)
-	if(tmp == 'o'):
+	if(tmp == 'O'):
 		return False
-	elif(tmp == 'x'):
+	elif(tmp == 'X'):
 		return False
 	else:
 		return True
@@ -80,12 +78,12 @@ class Board :
     def setChar(self, char,  r, c):
         list1 = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
 	if self.error_check(obj,position) is True :
-		if (self.player == 'o'):
+		if (self.player == 'O'):
 			self.array[lis1[position-1][0]][list1[position-1][1]] = char
-			self.player = 'x'
-		elif(self.player == 'x'):
+			self.player = 'X'
+		elif(self.player == 'X'):
 			self.array[lis1[position-1][0]][list1[position-1][1]] = char
-                        self.player = 'o'
+                        self.player = 'O'
     def claerBoard(self):
 	self.array = [[' ',' ',' '],
 			[' ',' ',' '],
