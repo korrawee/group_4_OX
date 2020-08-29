@@ -93,34 +93,9 @@ class Printer:
 			print("\n-------")
 
 class TextInput() :
-    def __init__(self,):
-        self.row = 0
-        self.column = 0
-        self.player = 1
     def getInput(self,obj):
-        self.row = int(input("row: "))
-        self.column = int(input("column: "))   
-        if self.error_check(obj,self.row,self.column) is True :
-            if(self.player == 1):
-                obj.board.setChar("o", self.row, self.column)
-                self.player = 2
-            elif(self.player == 2):
-                obj.board.setChar("x", self.row, self.column)
-                self.player = 1
-    def error_check(self,obj ,row ,column):
-        if(self.row > 2):
-            return False
-        elif(self.column > 2):
-            return False
-        tmp = obj.board.getChar(self.row, self.column)
-        if(tmp == 'o'):
-            return False
-        elif(tmp == 'x'):
-            return False
-        else:
-            return True
-
-
+	position = int(input("\nwhich box you desire:""))
+	obj.setChar()
         
-game = Printer()
-game.show()
+game = Board()
+game.startgame()
