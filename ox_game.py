@@ -74,16 +74,16 @@ class Board :
         list1 = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
         return self.array[list1[position-1][0]][list1[position-1][1]]
 
-    def setChar(self, char,  r, c):
+    def setChar(self, position): 
         list1 = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
-        if self.error_check(obj,position) is True :
-            if (self.player == 'O'):
-                self.array[lis1[position-1][0]][list1[position-1][1]] = char
+        if self.error_check(position) is True :
+            if(self.player == 'O'):
+                self.array[list1[position-1][0]][list1[position-1][1]] = self.player
                 self.player = 'X'
             elif(self.player == 'X'):
-                self.array[lis1[position-1][0]][list1[position-1][1]] = char
+                self.array[list1[position-1][0]][list1[position-1][1]] = self.player
                 self.player = 'O'
-    def claerBoard(self):
+    def clearBoard(self):
         self.array = [[' ',' ',' '],
                 [' ',' ',' '],
                 [' ',' ',' ']]
