@@ -13,10 +13,10 @@ class Board :
 	printer = Printer()
 	while self.game_stillplay:
 	   printer.show(self)
-	   if(self.win_check())
-		if self.player == 'o'
+	   if(self.win_check()):
+		if self.player == 'o':
 		   self.player = 'x'
-		else
+		else:
 		   self.player = 'o'
 		print("The winner is ",self.player)
 		self.clearBoard()
@@ -63,7 +63,7 @@ class Board :
 	elif(tmp == 'x'):
 		return False
 	else:
-		retrun True
+		return True
 
     def getChar(self, position):
         list1 = [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
